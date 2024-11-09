@@ -44,7 +44,10 @@ export default function Home() {
 
   
   return (
-   <RecipeCard title='algo' instructions={['1','2','3']} ingredients={['1','2','3']}/>
-    
+   <div className="min-h-screen bg-gradient-to-br from-blue-200 to-indigo-200">
+    <div className="max-w-4xl mx-auto p-6">
+      
+    </div>
+  </div>
   );
 }
