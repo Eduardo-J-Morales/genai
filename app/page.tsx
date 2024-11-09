@@ -6,6 +6,7 @@ import {RecipeCard } from '@/app/components/RecipeCard'
 export default function Home() {
   const [ ingredients, setIngredients ] = useState<string[]>([]);
   const [ currentIngredient, setCurrentIngredient] = useState('');
+  const [ recipe, setRecipe ] = useState<any>(null)
 
   
   return (
