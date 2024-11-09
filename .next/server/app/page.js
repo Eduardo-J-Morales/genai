@@ -56,6 +56,39 @@ module.exports = require("next/dist/server/app-render/work-unit-async-storage.ex
 
 /***/ }),
 
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -67,6 +100,28 @@ module.exports = require("path");
 
 /***/ }),
 
+/***/ "punycode":
+/*!***************************!*\
+  !*** external "punycode" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("punycode");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -75,6 +130,72 @@ module.exports = require("path");
 
 "use strict";
 module.exports = require("url");
+
+/***/ }),
+
+/***/ "util":
+/*!***********************!*\
+  !*** external "util" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");
+
+/***/ }),
+
+/***/ "worker_threads":
+/*!*********************************!*\
+  !*** external "worker_threads" ***!
+  \*********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("worker_threads");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
+
+/***/ }),
+
+/***/ "node:fs":
+/*!**************************!*\
+  !*** external "node:fs" ***!
+  \**************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:fs");
+
+/***/ }),
+
+/***/ "node:stream":
+/*!******************************!*\
+  !*** external "node:stream" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:stream");
+
+/***/ }),
+
+/***/ "node:stream/web":
+/*!**********************************!*\
+  !*** external "node:stream/web" ***!
+  \**********************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("node:stream/web");
 
 /***/ }),
 
@@ -167,7 +288,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _app_components_RecipeCard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/app/components/RecipeCard */ \"(ssr)/./app/components/RecipeCard.tsx\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\nfunction Home() {\n    const [ingredients, setIngredients] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    const [currentIngredient, setCurrentIngredient] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');\n    const [recipe, setRecipe] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const [loading, setLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    const [error, setError] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');\n    const handleAddIngredient = (e)=>{\n        e.preventDefault();\n        if (currentIngredient.trim()) {\n            setIngredients([\n                ...ingredients,\n                currentIngredient.trim()\n            ]);\n            setCurrentIngredient('');\n        }\n        const hadleRemoveIngredient = (index)=>{\n            setIngredients(ingredients.fileter(_, i));\n        };\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_app_components_RecipeCard__WEBPACK_IMPORTED_MODULE_2__.RecipeCard, {\n        title: \"algo\",\n        instructions: [\n            '1',\n            '2',\n            '3'\n        ],\n        ingredients: [\n            '1',\n            '2',\n            '3'\n        ]\n    }, void 0, false, {\n        fileName: \"/workspaces/genai/app/page.tsx\",\n        lineNumber: 31,\n        columnNumber: 4\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9hcHAvcGFnZS50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUVzQztBQUdrQjtBQUV6QyxTQUFTRztJQUN0QixNQUFNLENBQUVDLGFBQWFDLGVBQWdCLEdBQUdKLCtDQUFRQSxDQUFXLEVBQUU7SUFDN0QsTUFBTSxDQUFFSyxtQkFBbUJDLHFCQUFxQixHQUFHTiwrQ0FBUUEsQ0FBQztJQUM1RCxNQUFNLENBQUVPLFFBQVFDLFVBQVcsR0FBR1IsK0NBQVFBLENBQU07SUFDNUMsTUFBTSxDQUFFUyxTQUFTQyxXQUFZLEdBQUdWLCtDQUFRQSxDQUFVO0lBQ2xELE1BQU0sQ0FBRVcsT0FBT0MsU0FBVSxHQUFHWiwrQ0FBUUEsQ0FBQztJQUVyQyxNQUFNYSxzQkFBc0IsQ0FBQ0M7UUFDM0JBLEVBQUVDLGNBQWM7UUFFaEIsSUFBSVYsa0JBQWtCVyxJQUFJLElBQUk7WUFDNUJaLGVBQWU7bUJBQUlEO2dCQUFhRSxrQkFBa0JXLElBQUk7YUFBRztZQUN6RFYscUJBQXFCO1FBQ3ZCO1FBRUYsTUFBTVcsd0JBQXdCLENBQUNDO1lBQzdCZCxlQUFlRCxZQUFZZ0IsT0FBTyxDQUFDQyxHQUFHQztRQUN4QztJQUNBO0lBSUEscUJBQ0MsOERBQUNwQixrRUFBVUE7UUFBQ3FCLE9BQU07UUFBT0MsY0FBYztZQUFDO1lBQUk7WUFBSTtTQUFJO1FBQUVwQixhQUFhO1lBQUM7WUFBSTtZQUFJO1NBQUk7Ozs7OztBQUVuRiIsInNvdXJjZXMiOlsiL3dvcmtzcGFjZXMvZ2VuYWkvYXBwL3BhZ2UudHN4Il0sInNvdXJjZXNDb250ZW50IjpbIid1c2UgY2xpZW50J1xuXG5pbXBvcnQgUmVhY3QsIHsgdXNlU3RhdGV9IGZyb20gJ3JlYWN0J1xuaW1wb3J0IHsgQ2hlZkhhdCwgUGx1cywgWCwgTG9hZGVyMiB9IGZyb20gJ2x1Y2lkZS1yZWFjdCc7XG5pbXBvcnQgeyBnZW5lcmF0ZVJlY2lwZSB9IGZyb20gJ0AvYXBwL3NlcnZpY2VzL29wZWFpJ1xuaW1wb3J0IHsgUmVjaXBlQ2FyZCB9IGZyb20gJ0AvYXBwL2NvbXBvbmVudHMvUmVjaXBlQ2FyZCdcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSgpIHtcbiAgY29uc3QgWyBpbmdyZWRpZW50cywgc2V0SW5ncmVkaWVudHMgXSA9IHVzZVN0YXRlPHN0cmluZ1tdPihbXSk7XG4gIGNvbnN0IFsgY3VycmVudEluZ3JlZGllbnQsIHNldEN1cnJlbnRJbmdyZWRpZW50XSA9IHVzZVN0YXRlKCcnKTtcbiAgY29uc3QgWyByZWNpcGUsIHNldFJlY2lwZSBdID0gdXNlU3RhdGU8YW55PihudWxsKVxuICBjb25zdCBbIGxvYWRpbmcsIHNldExvYWRpbmcgXSA9IHVzZVN0YXRlPGJvb2xlYW4+KGZhbHNlKVxuICBjb25zdCBbIGVycm9yLCBzZXRFcnJvciBdID0gdXNlU3RhdGUoJycpO1xuXG4gIGNvbnN0IGhhbmRsZUFkZEluZ3JlZGllbnQgPSAoZTogUmVhY3QuRm9ybUV2ZW50KSA9PiB7XG4gICAgZS5wcmV2ZW50RGVmYXVsdCgpO1xuXG4gICAgaWYgKGN1cnJlbnRJbmdyZWRpZW50LnRyaW0oKSkge1xuICAgICAgc2V0SW5ncmVkaWVudHMoWy4uLmluZ3JlZGllbnRzLCBjdXJyZW50SW5ncmVkaWVudC50cmltKCldKTtcbiAgICAgIHNldEN1cnJlbnRJbmdyZWRpZW50KCcnKVxuICAgIH1cblxuICBjb25zdCBoYWRsZVJlbW92ZUluZ3JlZGllbnQgPSAoaW5kZXg6IG51bWJlcikgPT4ge1xuICAgIHNldEluZ3JlZGllbnRzKGluZ3JlZGllbnRzLmZpbGV0ZXIoXywgaSkpXG4gIH1cbiAgfVxuXG4gIFxuICBcbiAgcmV0dXJuIChcbiAgIDxSZWNpcGVDYXJkIHRpdGxlPSdhbGdvJyBpbnN0cnVjdGlvbnM9e1snMScsJzInLCczJ119IGluZ3JlZGllbnRzPXtbJzEnLCcyJywnMyddfS8+XG4gICk7XG59XG4iXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VTdGF0ZSIsIlJlY2lwZUNhcmQiLCJIb21lIiwiaW5ncmVkaWVudHMiLCJzZXRJbmdyZWRpZW50cyIsImN1cnJlbnRJbmdyZWRpZW50Iiwic2V0Q3VycmVudEluZ3JlZGllbnQiLCJyZWNpcGUiLCJzZXRSZWNpcGUiLCJsb2FkaW5nIiwic2V0TG9hZGluZyIsImVycm9yIiwic2V0RXJyb3IiLCJoYW5kbGVBZGRJbmdyZWRpZW50IiwiZSIsInByZXZlbnREZWZhdWx0IiwidHJpbSIsImhhZGxlUmVtb3ZlSW5ncmVkaWVudCIsImluZGV4IiwiZmlsZXRlciIsIl8iLCJpIiwidGl0bGUiLCJpbnN0cnVjdGlvbnMiXSwiaWdub3JlTGlzdCI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./app/page.tsx\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _app_services_opeai__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/app/services/opeai */ \"(ssr)/./app/services/opeai.ts\");\n/* harmony import */ var _app_components_RecipeCard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/app/components/RecipeCard */ \"(ssr)/./app/components/RecipeCard.tsx\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\nfunction Home() {\n    const [ingredients, setIngredients] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    const [currentIngredient, setCurrentIngredient] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');\n    const [recipe, setRecipe] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const [loading, setLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    const [error, setError] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)('');\n    const handleAddIngredient = (e)=>{\n        e.preventDefault();\n        if (currentIngredient.trim()) {\n            setIngredients([\n                ...ingredients,\n                currentIngredient.trim()\n            ]);\n            setCurrentIngredient('');\n        }\n    };\n    const hadleRemoveIngredient = (index)=>{\n        setIngredients(ingredients.filter((_, i)=>i !== index));\n    };\n    const handleGenerateRecipe = async ()=>{\n        if (ingredients.length === 0) {\n            setError('Please add at least one ingredient');\n            return;\n            setLoading(true);\n            setError('');\n            try {\n                const generatedRecipe = await (0,_app_services_opeai__WEBPACK_IMPORTED_MODULE_2__.generateRecipe)(ingredients);\n                setRecipe(generatedRecipe);\n            } catch (error) {\n                setError('Failed to generate recipe. Please check your API key and try again.');\n            } finally{\n                setLoading(false);\n            }\n        }\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_app_components_RecipeCard__WEBPACK_IMPORTED_MODULE_3__.RecipeCard, {\n        title: \"algo\",\n        instructions: [\n            '1',\n            '2',\n            '3'\n        ],\n        ingredients: [\n            '1',\n            '2',\n            '3'\n        ]\n    }, void 0, false, {\n        fileName: \"/workspaces/genai/app/page.tsx\",\n        lineNumber: 47,\n        columnNumber: 4\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9hcHAvcGFnZS50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFFc0M7QUFFZTtBQUNHO0FBRXpDLFNBQVNJO0lBQ3RCLE1BQU0sQ0FBRUMsYUFBYUMsZUFBZ0IsR0FBR0wsK0NBQVFBLENBQVcsRUFBRTtJQUM3RCxNQUFNLENBQUVNLG1CQUFtQkMscUJBQXFCLEdBQUdQLCtDQUFRQSxDQUFDO0lBQzVELE1BQU0sQ0FBRVEsUUFBUUMsVUFBVyxHQUFHVCwrQ0FBUUEsQ0FBTTtJQUM1QyxNQUFNLENBQUVVLFNBQVNDLFdBQVksR0FBR1gsK0NBQVFBLENBQVU7SUFDbEQsTUFBTSxDQUFFWSxPQUFPQyxTQUFVLEdBQUdiLCtDQUFRQSxDQUFDO0lBRXJDLE1BQU1jLHNCQUFzQixDQUFDQztRQUMzQkEsRUFBRUMsY0FBYztRQUVoQixJQUFJVixrQkFBa0JXLElBQUksSUFBSTtZQUM1QlosZUFBZTttQkFBSUQ7Z0JBQWFFLGtCQUFrQlcsSUFBSTthQUFHO1lBQ3pEVixxQkFBcUI7UUFDdkI7SUFDRjtJQUVBLE1BQU1XLHdCQUF3QixDQUFDQztRQUM3QmQsZUFBZUQsWUFBWWdCLE1BQU0sQ0FBQyxDQUFDQyxHQUFHQyxJQUFNQSxNQUFJSDtJQUNsRDtJQUVBLE1BQU1JLHVCQUF1QjtRQUMzQixJQUFJbkIsWUFBWW9CLE1BQU0sS0FBSyxHQUFHO1lBQzVCWCxTQUFTO1lBQ1Q7WUFDQUYsV0FBVztZQUNYRSxTQUFTO1lBQ1QsSUFBSTtnQkFDRixNQUFNWSxrQkFBa0IsTUFBTXhCLG1FQUFjQSxDQUFDRztnQkFDN0NLLFVBQVVnQjtZQUNaLEVBQUUsT0FBTWIsT0FBTztnQkFDYkMsU0FBUztZQUNYLFNBQVU7Z0JBQ1JGLFdBQVc7WUFDYjtRQUNGO0lBQ0Y7SUFHQSxxQkFDQyw4REFBQ1Qsa0VBQVVBO1FBQUN3QixPQUFNO1FBQU9DLGNBQWM7WUFBQztZQUFJO1lBQUk7U0FBSTtRQUFFdkIsYUFBYTtZQUFDO1lBQUk7WUFBSTtTQUFJOzs7Ozs7QUFHbkYiLCJzb3VyY2VzIjpbIi93b3Jrc3BhY2VzL2dlbmFpL2FwcC9wYWdlLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGNsaWVudCdcblxuaW1wb3J0IFJlYWN0LCB7IHVzZVN0YXRlfSBmcm9tICdyZWFjdCdcbmltcG9ydCB7IENoZWZIYXQsIFBsdXMsIFgsIExvYWRlcjIgfSBmcm9tICdsdWNpZGUtcmVhY3QnO1xuaW1wb3J0IHsgZ2VuZXJhdGVSZWNpcGUgfSBmcm9tICdAL2FwcC9zZXJ2aWNlcy9vcGVhaSdcbmltcG9ydCB7IFJlY2lwZUNhcmQgfSBmcm9tICdAL2FwcC9jb21wb25lbnRzL1JlY2lwZUNhcmQnXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIEhvbWUoKSB7XG4gIGNvbnN0IFsgaW5ncmVkaWVudHMsIHNldEluZ3JlZGllbnRzIF0gPSB1c2VTdGF0ZTxzdHJpbmdbXT4oW10pO1xuICBjb25zdCBbIGN1cnJlbnRJbmdyZWRpZW50LCBzZXRDdXJyZW50SW5ncmVkaWVudF0gPSB1c2VTdGF0ZSgnJyk7XG4gIGNvbnN0IFsgcmVjaXBlLCBzZXRSZWNpcGUgXSA9IHVzZVN0YXRlPGFueT4obnVsbClcbiAgY29uc3QgWyBsb2FkaW5nLCBzZXRMb2FkaW5nIF0gPSB1c2VTdGF0ZTxib29sZWFuPihmYWxzZSlcbiAgY29uc3QgWyBlcnJvciwgc2V0RXJyb3IgXSA9IHVzZVN0YXRlKCcnKTtcblxuICBjb25zdCBoYW5kbGVBZGRJbmdyZWRpZW50ID0gKGU6IFJlYWN0LkZvcm1FdmVudCkgPT4ge1xuICAgIGUucHJldmVudERlZmF1bHQoKTtcblxuICAgIGlmIChjdXJyZW50SW5ncmVkaWVudC50cmltKCkpIHtcbiAgICAgIHNldEluZ3JlZGllbnRzKFsuLi5pbmdyZWRpZW50cywgY3VycmVudEluZ3JlZGllbnQudHJpbSgpXSk7XG4gICAgICBzZXRDdXJyZW50SW5ncmVkaWVudCgnJylcbiAgICB9XG4gIH1cblxuICBjb25zdCBoYWRsZVJlbW92ZUluZ3JlZGllbnQgPSAoaW5kZXg6IG51bWJlcikgPT4ge1xuICAgIHNldEluZ3JlZGllbnRzKGluZ3JlZGllbnRzLmZpbHRlcigoXywgaSkgPT4gaSE9PWluZGV4KSlcbiAgfVxuXG4gIGNvbnN0IGhhbmRsZUdlbmVyYXRlUmVjaXBlID0gYXN5bmMgKCkgPT4ge1xuICAgIGlmIChpbmdyZWRpZW50cy5sZW5ndGggPT09IDApIHtcbiAgICAgIHNldEVycm9yKCdQbGVhc2UgYWRkIGF0IGxlYXN0IG9uZSBpbmdyZWRpZW50Jyk7XG4gICAgICByZXR1cm47XG4gICAgICBzZXRMb2FkaW5nKHRydWUpXG4gICAgICBzZXRFcnJvcignJyk7XG4gICAgICB0cnkge1xuICAgICAgICBjb25zdCBnZW5lcmF0ZWRSZWNpcGUgPSBhd2FpdCBnZW5lcmF0ZVJlY2lwZShpbmdyZWRpZW50cyk7XG4gICAgICAgIHNldFJlY2lwZShnZW5lcmF0ZWRSZWNpcGUpO1xuICAgICAgfSBjYXRjaChlcnJvcikge1xuICAgICAgICBzZXRFcnJvcignRmFpbGVkIHRvIGdlbmVyYXRlIHJlY2lwZS4gUGxlYXNlIGNoZWNrIHlvdXIgQVBJIGtleSBhbmQgdHJ5IGFnYWluLicpXG4gICAgICB9IGZpbmFsbHkge1xuICAgICAgICBzZXRMb2FkaW5nKGZhbHNlKVxuICAgICAgfVxuICAgIH1cbiAgfVxuXG4gIFxuICByZXR1cm4gKFxuICAgPFJlY2lwZUNhcmQgdGl0bGU9J2FsZ28nIGluc3RydWN0aW9ucz17WycxJywnMicsJzMnXX0gaW5ncmVkaWVudHM9e1snMScsJzInLCczJ119Lz5cbiAgICBcbiAgKTtcbn1cbiJdLCJuYW1lcyI6WyJSZWFjdCIsInVzZVN0YXRlIiwiZ2VuZXJhdGVSZWNpcGUiLCJSZWNpcGVDYXJkIiwiSG9tZSIsImluZ3JlZGllbnRzIiwic2V0SW5ncmVkaWVudHMiLCJjdXJyZW50SW5ncmVkaWVudCIsInNldEN1cnJlbnRJbmdyZWRpZW50IiwicmVjaXBlIiwic2V0UmVjaXBlIiwibG9hZGluZyIsInNldExvYWRpbmciLCJlcnJvciIsInNldEVycm9yIiwiaGFuZGxlQWRkSW5ncmVkaWVudCIsImUiLCJwcmV2ZW50RGVmYXVsdCIsInRyaW0iLCJoYWRsZVJlbW92ZUluZ3JlZGllbnQiLCJpbmRleCIsImZpbHRlciIsIl8iLCJpIiwiaGFuZGxlR2VuZXJhdGVSZWNpcGUiLCJsZW5ndGgiLCJnZW5lcmF0ZWRSZWNpcGUiLCJ0aXRsZSIsImluc3RydWN0aW9ucyJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./app/page.tsx\n");
+
+/***/ }),
+
+/***/ "(ssr)/./app/services/opeai.ts":
+/*!*******************************!*\
+  !*** ./app/services/opeai.ts ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   generateRecipe: () => (/* binding */ generateRecipe),\n/* harmony export */   openai: () => (/* binding */ openai)\n/* harmony export */ });\n/* harmony import */ var openai__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! openai */ \"(ssr)/./node_modules/openai/index.mjs\");\n\nconst OPENAI_API_KEY = '';\nconst openai = new openai__WEBPACK_IMPORTED_MODULE_0__[\"default\"]({\n    apiKey: OPENAI_API_KEY,\n    dangerouslyAllowBrowser: true\n});\nconst generateRecipe = async (ingredients)=>{\n    try {\n        const response = await openai.chat.completions.create({\n            model: \"gpt-3.5-turbo\",\n            messages: [\n                {\n                    role: \"system\",\n                    content: `You are professional chef \n                    who creates recipes based on available ingredients. \n                    Provide detailed, \n                    creative recipes that are both delicious and practical.`\n                },\n                {\n                    role: \"user\",\n                    content: `I have these ingredients: ${ingredients.join(', ')}. Please suggest a recipe in JSON format\n                    with the following structure: { title: string, ingredients: string[], instructions: string[],\n                    cookingTime: string, servings: nomber, difficulty: string}`\n                }\n            ],\n            temperature: 0.7\n        });\n        const recipe = JSON.parse(response.choices[0].message.content || '{}');\n        return recipe;\n    } catch (error) {\n        console.error('Error generating recipe:', error);\n        throw error;\n    }\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9hcHAvc2VydmljZXMvb3BlYWkudHMiLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQTJCO0FBRTNCLE1BQU9DLGlCQUFpQjtBQUVqQixNQUFNQyxTQUFTLElBQUlGLDhDQUFNQSxDQUFDO0lBQzdCRyxRQUFRRjtJQUNSRyx5QkFBeUI7QUFDN0IsR0FBRTtBQUVLLE1BQU1DLGlCQUFpQixPQUFPQztJQUNqQyxJQUFJO1FBRUEsTUFBTUMsV0FBVyxNQUFNTCxPQUFPTSxJQUFJLENBQUNDLFdBQVcsQ0FBQ0MsTUFBTSxDQUFDO1lBQ2xEQyxPQUFPO1lBQ1BDLFVBQVU7Z0JBQ047b0JBQ0lDLE1BQU07b0JBQ05DLFNBQVMsQ0FBQzs7OzJFQUc2QyxDQUFDO2dCQUM1RDtnQkFDQTtvQkFDSUQsTUFBTTtvQkFDTkMsU0FBUyxDQUFDLDBCQUEwQixFQUFFUixZQUFZUyxJQUFJLENBQUMsTUFBTTs7OEVBRUgsQ0FBQztnQkFDL0Q7YUFDSDtZQUNEQyxhQUFhO1FBQ2pCO1FBRUEsTUFBTUMsU0FBU0MsS0FBS0MsS0FBSyxDQUFDWixTQUFTYSxPQUFPLENBQUMsRUFBRSxDQUFDQyxPQUFPLENBQUNQLE9BQU8sSUFBSTtRQUNqRSxPQUFPRztJQUVYLEVBQUUsT0FBTUssT0FBTztRQUNYQyxRQUFRRCxLQUFLLENBQUMsNEJBQTRCQTtRQUMxQyxNQUFNQTtJQUNWO0FBQ0osRUFBQyIsInNvdXJjZXMiOlsiL3dvcmtzcGFjZXMvZ2VuYWkvYXBwL3NlcnZpY2VzL29wZWFpLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBPcGVuQUkgZnJvbSAnb3BlbmFpJ1xuXG5jb25zdCAgT1BFTkFJX0FQSV9LRVkgPSAnJ1xuXG5leHBvcnQgY29uc3Qgb3BlbmFpID0gbmV3IE9wZW5BSSh7XG4gICAgYXBpS2V5OiBPUEVOQUlfQVBJX0tFWSxcbiAgICBkYW5nZXJvdXNseUFsbG93QnJvd3NlcjogdHJ1ZVxufSlcblxuZXhwb3J0IGNvbnN0IGdlbmVyYXRlUmVjaXBlID0gYXN5bmMgKGluZ3JlZGllbnRzOiBzdHJpbmdbXSkgPT4ge1xuICAgIHRyeSB7XG5cbiAgICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBvcGVuYWkuY2hhdC5jb21wbGV0aW9ucy5jcmVhdGUoe1xuICAgICAgICAgICAgbW9kZWw6IFwiZ3B0LTMuNS10dXJib1wiLFxuICAgICAgICAgICAgbWVzc2FnZXM6IFtcbiAgICAgICAgICAgICAgICB7XG4gICAgICAgICAgICAgICAgICAgIHJvbGU6IFwic3lzdGVtXCIsXG4gICAgICAgICAgICAgICAgICAgIGNvbnRlbnQ6IGBZb3UgYXJlIHByb2Zlc3Npb25hbCBjaGVmIFxuICAgICAgICAgICAgICAgICAgICB3aG8gY3JlYXRlcyByZWNpcGVzIGJhc2VkIG9uIGF2YWlsYWJsZSBpbmdyZWRpZW50cy4gXG4gICAgICAgICAgICAgICAgICAgIFByb3ZpZGUgZGV0YWlsZWQsIFxuICAgICAgICAgICAgICAgICAgICBjcmVhdGl2ZSByZWNpcGVzIHRoYXQgYXJlIGJvdGggZGVsaWNpb3VzIGFuZCBwcmFjdGljYWwuYFxuICAgICAgICAgICAgICAgIH0sXG4gICAgICAgICAgICAgICAge1xuICAgICAgICAgICAgICAgICAgICByb2xlOiBcInVzZXJcIixcbiAgICAgICAgICAgICAgICAgICAgY29udGVudDogYEkgaGF2ZSB0aGVzZSBpbmdyZWRpZW50czogJHtpbmdyZWRpZW50cy5qb2luKCcsICcpfS4gUGxlYXNlIHN1Z2dlc3QgYSByZWNpcGUgaW4gSlNPTiBmb3JtYXRcbiAgICAgICAgICAgICAgICAgICAgd2l0aCB0aGUgZm9sbG93aW5nIHN0cnVjdHVyZTogeyB0aXRsZTogc3RyaW5nLCBpbmdyZWRpZW50czogc3RyaW5nW10sIGluc3RydWN0aW9uczogc3RyaW5nW10sXG4gICAgICAgICAgICAgICAgICAgIGNvb2tpbmdUaW1lOiBzdHJpbmcsIHNlcnZpbmdzOiBub21iZXIsIGRpZmZpY3VsdHk6IHN0cmluZ31gXG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgXSxcbiAgICAgICAgICAgIHRlbXBlcmF0dXJlOiAwLjdcbiAgICAgICAgfSk7XG5cbiAgICAgICAgY29uc3QgcmVjaXBlID0gSlNPTi5wYXJzZShyZXNwb25zZS5jaG9pY2VzWzBdLm1lc3NhZ2UuY29udGVudCB8fCAne30nKVxuICAgICAgICByZXR1cm4gcmVjaXBlXG5cbiAgICB9IGNhdGNoKGVycm9yKSB7XG4gICAgICAgIGNvbnNvbGUuZXJyb3IoJ0Vycm9yIGdlbmVyYXRpbmcgcmVjaXBlOicsIGVycm9yKTtcbiAgICAgICAgdGhyb3cgZXJyb3JcbiAgICB9XG59Il0sIm5hbWVzIjpbIk9wZW5BSSIsIk9QRU5BSV9BUElfS0VZIiwib3BlbmFpIiwiYXBpS2V5IiwiZGFuZ2Vyb3VzbHlBbGxvd0Jyb3dzZXIiLCJnZW5lcmF0ZVJlY2lwZSIsImluZ3JlZGllbnRzIiwicmVzcG9uc2UiLCJjaGF0IiwiY29tcGxldGlvbnMiLCJjcmVhdGUiLCJtb2RlbCIsIm1lc3NhZ2VzIiwicm9sZSIsImNvbnRlbnQiLCJqb2luIiwidGVtcGVyYXR1cmUiLCJyZWNpcGUiLCJKU09OIiwicGFyc2UiLCJjaG9pY2VzIiwibWVzc2FnZSIsImVycm9yIiwiY29uc29sZSJdLCJpZ25vcmVMaXN0IjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./app/services/opeai.ts\n");
 
 /***/ }),
 
@@ -234,7 +366,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/lucide-react"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.tsx&appDir=%2Fworkspaces%2Fgenai%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fworkspaces%2Fgenai&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/formdata-node","vendor-chunks/openai","vendor-chunks/form-data-encoder","vendor-chunks/lucide-react","vendor-chunks/whatwg-url","vendor-chunks/agentkeepalive","vendor-chunks/tr46","vendor-chunks/web-streams-polyfill","vendor-chunks/node-fetch","vendor-chunks/webidl-conversions","vendor-chunks/ms","vendor-chunks/humanize-ms","vendor-chunks/event-target-shim","vendor-chunks/abort-controller"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.tsx&appDir=%2Fworkspaces%2Fgenai%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fworkspaces%2Fgenai&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

@@ -19,6 +19,7 @@ export default function Home() {
       setIngredients([...ingredients, currentIngredient.trim()]);
       setCurrentIngredient('')
     }
+  }
 
   const hadleRemoveIngredient = (index: number) => {
     setIngredients(ingredients.filter((_, i) => i!==index))
@@ -42,11 +43,8 @@ export default function Home() {
   }
 
   
-
-
-  
-  
   return (
    <RecipeCard title='algo' instructions={['1','2','3']} ingredients={['1','2','3']}/>
+    
   );
 }
