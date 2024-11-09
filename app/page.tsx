@@ -10,6 +10,10 @@ export default function Home() {
   const [ loading, setLoading ] = useState<boolean>(false)
   const [ error, setError ] = useState('');
 
+  const handleAddIngredient = (e: React.FormEvent) => {
+    
+  }
+
   
   
   return (
