@@ -1,6 +1,7 @@
-import {RecipeCard } from '@/app/components/RecipeCard'
+import React, { useState } from 'react'
 import { ChefHat, Plus, X, Loader2 } from 'lucide-react';
 import { generateRecipe } from '@/app/services/opeai'
+import {RecipeCard } from '@/app/components/RecipeCard'
 
 export default function Home() {
   return (
