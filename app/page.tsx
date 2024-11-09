@@ -19,6 +19,13 @@ export default function Home() {
       setIngredients([...ingredients, currentIngredient.trim()]);
       setCurrentIngredient('')
     }
+
+  const hadleRemoveIngredient = (index: number) => {
+    setIngredients(ingredients.filter((_, i) => i!==index))
+  }
+
+  const handleGenerateRecipe = async () => {
+    
   }
 
   
