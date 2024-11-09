@@ -25,8 +25,13 @@ export default function Home() {
   }
 
   const handleGenerateRecipe = async () => {
-    
+    if (ingredients.length === 0) {
+      setError('Please add at least one ingredient');
+      return;
+    }
   }
+
+  
 
   
   
