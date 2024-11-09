@@ -8,7 +8,9 @@ export default function Home() {
   const [ currentIngredient, setCurrentIngredient] = useState('');
   const [ recipe, setRecipe ] = useState<any>(null)
   const [ loading, setLoading ] = useState<boolean>(false)
+  const [ error, setError ] = useState('');
 
+  
   
   return (
    <RecipeCard title='algo' instructions={['1','2','3']} ingredients={['1','2','3']}/>
