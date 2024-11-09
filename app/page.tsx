@@ -29,6 +29,15 @@ export default function Home() {
       setError('Please add at least one ingredient');
       return;
       setLoading(true)
+      setError('');
+      try {
+        const generatedRecipe = await generateRecipe(ingredients);
+        setRecipe(generatedRecipe);
+      } catch(error) {
+        setError('Failed to generate recipe. Please check your API key and try again.')
+      } finally {
+        setLoading(false)
+      }
     }
   }
 
