@@ -1,7 +1,9 @@
-import React, { useState } from 'react'
+'use client'
+
+import React, { useState} from 'react'
 import { ChefHat, Plus, X, Loader2 } from 'lucide-react';
 import { generateRecipe } from '@/app/services/opeai'
-import {RecipeCard } from '@/app/components/RecipeCard'
+import { RecipeCard } from '@/app/components/RecipeCard'
 
 export default function Home() {
   const [ ingredients, setIngredients ] = useState<string[]>([]);
@@ -11,7 +13,12 @@ export default function Home() {
   const [ error, setError ] = useState('');
 
   const handleAddIngredient = (e: React.FormEvent) => {
-    
+    e.preventDefault();
+
+    if (currentIngredient.trim()) {
+      setIngredients([...ingredients, currentIngredient.trim()]);
+      setCurrentIngredient('')
+    }
   }
 
   
