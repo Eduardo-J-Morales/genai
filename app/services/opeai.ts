@@ -23,14 +23,15 @@ export const generateRecipe = async (ingredients: string[]) => {
                 {
                     role: "user",
                     content: `I have these ingredients: ${ingredients.join(', ')}. Please suggest a recipe in JSON format
-                    with the owing structure: { title: string, ingredients: string[], instructions: string[],
+                    with the following structure: { title: string, ingredients: string[], instructions: string[],
                     cookingTime: string, servings: nomber, difficulty: string}`
                 }
-            ],foll
+            ],
             temperature: 0.7
         });
 
-      
+        const recipe = JSON.parse(response.choices[0].message.content || '{}')
+        return recipe
 
     } catch(error) {
         console.error('Error generating recipe:', error);
