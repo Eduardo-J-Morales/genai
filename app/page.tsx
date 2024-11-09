@@ -28,10 +28,12 @@ export default function Home() {
     if (ingredients.length === 0) {
       setError('Please add at least one ingredient');
       return;
+      setLoading(true)
     }
   }
 
   
+
 
   
   
