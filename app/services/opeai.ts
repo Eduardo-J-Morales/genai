@@ -8,5 +8,10 @@ export const opeani = new OpenAI({
 })
 
 export const generateRecipe = async (ingredients: string[]) => {
-    
+    try {
+
+    } catch(error) {
+        console.error('Error generating recipe:', error);
+        throw error
+    }
 }
