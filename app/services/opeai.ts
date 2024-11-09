@@ -15,7 +15,10 @@ export const generateRecipe = async (ingredients: string[]) => {
             messages: [
                 {
                     role: "system",
-                    content: "You are professional chef who creates recipes based on available ingredients."
+                    content: `You are professional chef 
+                    who creates recipes based on available ingredients. 
+                    Provide detailed, 
+                    creative recipes that are both delicious and practical.`
                 }
             ]
         })
