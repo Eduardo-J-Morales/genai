@@ -120,7 +120,16 @@ export default function Home() {
               </>
             )}
           </button>
+
+          { error && (
+            <p className="mt-4 text-red-600 text-center">{erro}</p>
+          )}
         </div>
+
+        {recipe && (
+          <RecipeCard
+          title={recipe.title}
+        )}
       </div>
     </div>
   );
