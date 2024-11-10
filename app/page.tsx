@@ -66,9 +66,14 @@ export default function Home() {
             value={currentIngredient}
             onChange={(e) => setCurrentIngredient(e.target.value)}
             placeholder="Enter an ingredient"
-            className="flex-1 px-4 py-2 "
-  
-            />
+
+            className="flex-1 px-4 py-2 border border-gray-300 rounded-lg 
+            focus:outline-none focus:ring-2 focus:ring-indigo-500"/>
+            <button className="px-4 py-2 bg-indigo-600 text-white rounded-lg 
+            hover:bg-indigo-700 transition-colors flex items-center gap-2">
+            <Plus/>
+              Add
+            </button>
           </div>
         </form>
       </div>
