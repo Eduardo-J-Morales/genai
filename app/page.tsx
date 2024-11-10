@@ -21,7 +21,7 @@ export default function Home() {
     }
   };
 
-  const hadleRemoveIngredient = (index: number) => {
+  const handleRemoveIngredient = (index: number) => {
     setIngredients(ingredients.filter((_, i) => i !== index));
   };
 
@@ -89,8 +89,21 @@ export default function Home() {
               <h3 className="text-lg font-semibold text-gray-700 mb-3">
                 Your ingredients:
               </h3>
+              <div className="flex flex-wrap gap-2">
+                {ingredients.map((ingredient, index) => (
+                  <span className="inline-flex items-center gap-1 px-3 py-1 
+                  bg-indigo-100 text-indigo-800 rounded-full">
+                    {ingredient}
+                    <button onClick={() => handleRemoveIngredient(index)} className="hover:text-indigo-600"><X className="w-4 h-4"/></button>
+                    </span>
+               ))}
+              </div>
             </div>
           )}
+
+          <button
+          onClick={handleGenerateRecipe}
+          ></button>
         </div>
       </div>
     </div>
