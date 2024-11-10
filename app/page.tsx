@@ -129,6 +129,11 @@ export default function Home() {
         {recipe && (
           <RecipeCard
           title={recipe.title}
+          ingredients={recipe.ingredients}
+          instructions={recipe.instructions}
+          cookingTime={recipe.cookingTime}
+          servings={recipe.servings}
+          difficulty={recipe.difficulty}/>
         )}
       </div>
     </div>
