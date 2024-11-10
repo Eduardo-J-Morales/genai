@@ -103,7 +103,23 @@ export default function Home() {
 
           <button
           onClick={handleGenerateRecipe}
-          ></button>
+          disabled={loading || ingredients.length == 0}
+          className="px-4 py-3 bg-indigo-600 text-white rounded-lg 
+          hover:bg-indigo-700 transition-colors 
+          disabled:bg-indigo-300 flex items-center justify-center gap-2"
+          >
+            {loading ? (
+              <>
+              <Loader2 className="w-5 h-5 animate-spin"/>
+              Generating Recipe...
+              </>
+            ): (
+              <>
+              <ChefHat className="w-5 h-5"/>
+              Generate Recipe
+              </>
+            )}
+          </button>
         </div>
       </div>
     </div>
