@@ -58,6 +58,20 @@ export default function Home() {
           </p>
         </header>
       
+      <div className="bg-white rounded-xl shadow-md p-6 mb-8">
+        <form onSubmit={handleAddIngredient} className="mb-6">
+          <div className="flex gap-2">
+            <input
+            type="text"
+            value={currentIngredient}
+            onChange={(e) => setCurrentIngredient(e.target.value)}
+            placeholder="Enter an ingredient"
+            className="flex-1 px-4 py-2 "
+  
+            />
+          </div>
+        </form>
+      </div>
       </div>
     </div>
   );
