@@ -35,6 +35,23 @@ def create_contact():
 def update_contact(user_id):
     contact = Contact.query.get(user_id)
 
+    if not contact:
+        return jsonify({"message": "Contact not found"}), 404
+    
+    data = request.json
+    contact.first_name = data.get("firstName", contact.first_name)
+    contact.last_name = data.get("lastName", contact.last_name) 
+    contact.email = data.get("email", contact.email)
+
+    db.session.commit()
+
+    return jsonify({"message": "Contact updated successfully"})
+
+@app.route("/delete_contact/<int:user_id>", methods=["DELETE"])
+def delete_contact(user_id):
+    
+
+
 
 
 if __name__ == "__main__":
