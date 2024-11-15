@@ -29,7 +29,11 @@ def create_contact():
     except Exception as e:
         return jsonify({"message": str(e)}), 400
     
-    
+    return jsonify({"message": "Contact created"}), 201
+
+
+
+
 
 if __name__ == "__main__":
     
