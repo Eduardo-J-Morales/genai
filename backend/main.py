@@ -48,8 +48,7 @@ def update_contact(user_id):
     return jsonify({"message": "Contact updated successfully"})
 
 @app.route("/delete_contact/<int:user_id>", methods=["DELETE"])
-def delete_contact(user_id):
-    
+
 
 
 
